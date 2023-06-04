@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.container{
+		margin-top:150px;
+	}
+.btn-file {
+		position: relative;
+		overflow: hidden;
+	}
+	.btn-file input[type=file] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 100%;
+		min-height: 100%;
+		font-size: 100px;
+		text-align: right;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		outline: none;
+		background: white;
+		cursor: inherit;
+		display: block;
+	}
+	
+	#img-upload{
+		width: 25%;
+		display: block;
+		
+	}
+	#upload{
+		margin-top:10px;
+	}
+</style>
+<!-- main css -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- media queries css -->
+<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+<!-- html5.js for IE less than 9 -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src='js/upload.js'></script>
+<script  src="prefixfree/1-0-7/prefixfree.dynamic-dom.min.js"></script>
+<!-- jQuery -->
+<script src="ajax/libs/jquery/1-10-2/jquery.min.js"></script>
+<script src="ajax/libs/jqueryui/1-8/jquery-ui.min.js"></script>
+<script src="js/jsapi.js"></script>
+<script  src="js/main.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-48354920-1', 'lubax.com');
+	ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+		<div id="pagewrap" data-nav="home">
+			
+	<header id="header">
+		<div id="header-center">
+			<a id="site-logo" href="static/index.html" title=" Home"></a>
+			
+			<nav>
+				<ul id="main-nav">
+					<li><a href="#about" class="nav">About Us</a></li>
+					<li><a href="#how" class="nav">How it Works</a></li>
+					<li><a href="#news" class="nav">News</a> </li>
+					<li><a href="#contact" class="nav">Contact</a></li>
+				</ul>
+				<!-- /#main-nav --> 
+			</nav>
+		</div>
+	</header>
+	
+	</div>
+	<div class="container">
+			<center>
+				<img id='img-upload'/>
+			</center>
+			<center>
+				<div class="col-md-6" style='margin-left:250px;'>
+					<form class="form-group" action="..\uploaded" method='post' enctype="multipart/form-data">
+						<label>Upload Image</label>
+						<div class="input-group">
+							<span class="input-group-btn">
+								<span class="btn btn-default btn-file">
+									Browse… <input type="file" id="imgInp" name="file">
+								</span>
+							</span>
+							<input type="text" class="form-control" readonly>
+							
+						</div>
+						<input type='submit' id='upload' class='btn btn-lg btn-success' value='Upload'>
+					</form>
+				</div>
+			</center>
+				</div>
+				<div id="panel2" data-nav="about">
+			<h3 class="center-title">About Us</h3>
+			<div class="panel-inside">
+				<div class="panel2-sq" id="sq1">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi web ini membantu Anda untuk mengetahui penyakit kulit dengan cepat.
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq2">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi web ini bekerja dengan cara Anda upload sebuah gambar yang mirip dengan masalah kulit Anda.
+Aplikasi web ini dirancang untuk Anda mengetahui penyebab dan cara pengobatan penyakit kulit. 
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq3">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Harapannya aplikasi ini mampu membantu masyarakat untuk dapat membedakan penyakit kulit yang sedang dialami, dan informasi tersebut dapat berguna bagi pihak yang membutuhkannya.
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq4" style="margin-right: 0">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi ini dibuat guna memenuhi syarat kelulusan program SIB x Orbit Future Academy Batch 4.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<a id="panel2-down" class="pic-icon down2 nav" href="#how"></a>
+		</div>
+		<!-- /#panel2 --> 
+		<div id="panel3" data-nav="how">
+			<h3 class="center-title">How it Works</h3>
+			<div class="panel-inside">
+				<div id="panel3-sq1">
+					<h3>DermAssist: The Dermatologist in Your Pocket</h3>
+					<div id="sq3-text">
+						Bekerja seperti pencarian gambar Google, kami dirancang khusus untuk gambar penyakit kulit. Sementara pencarian gambar Google menyurvei seluruh internet, sedangkan kami menggunakan gambar penyakit kulit yang telah dipilih dengan cermat.
+					</div>
+				</div>
+				<img id="panel3-sq2" src="images/algorithm.png" class="panel-img" alt="Lubax Alorithm"/>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down1 nav" href="#database"></a>
+		</div>
+		<!-- /#panel3 --> 
+		<div id="panel4" data-nav="database">
+			<h3 class="center-title">DermAssist: The Dermatologist in Your Pocket</h3>
+			<div class="panel-inside">
+				<img id="panel4-sq1" src="images/database.png" class="panel-img"  alt="Lubax Database"/>
+				<div id="panel4-sq2">
+					<p> - Lebih fleksibel
+					<p> - Dapat digunakan setiap saat
+					<p> - Gratis</p>
+					<p>   </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down2 nav" href="#platform"></a>
+		</div>
+		<!-- /#panel4 
+		<div id="panel5" data-nav="platform">
+			<h3 class="center-title">The Platform</h3>
+			<div class="panel-inside">
+				<div id="panel5-sq1">
+					<div id="sq5-text">
+						A smartphone or tablet is the ideal platform for Lūbax.  The clinician does not need to obtain expensive hardware solutions or worry about expensive per-use charges per patient.  Lūbax is a simple, inexpensive system to identify skin lesions using a smartphone and tablet based platforms.
+					</div>
+				</div>
+				<img id="panel5-sq2" src="images/platforms.png" class="panel-img" alt="Lubax Platform"/>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down1 nav" href="#team"></a>
+		</div>
+		 /#panel5 --> 
+		<!-- /#panel6 --> 
+
+		<div id="panel8" data-nav="news">
+		  <h3 class="center-title">Jenis Penyakit</h3>
+		  <div class="panel-inside">
+			<p class="center-title">Berikut adalah beberapa daftar jenis penyakit kulit:</p>
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-4">
+				  <div class="item">
+					<h3>Melanocytic Nevi</h3>
+					<img src="/static/images/NV.jpg" alt="gambar Melanocytic-Nevi" style="width: 60%" />
+					<p>
+					  <i>Melanocytic nevi</i> juga dikenal sebagai tahi lalat, adalah benjolan kulit yang terbentuk akibat penumpukan melanosit. Penyebab utama terbentuknya melanocytic nevi adalah gangguan perkembangan melanosit selama masa
+					  pertumbuhan dan perkembangan individu.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="item">
+					<h3>Melanoma</h3>
+					<img src="/static/images/mel.jpg" alt="gambar Melanoma" style="width: 60%" />
+					<p>
+					  penyakit <i>Melanoma</i> Kemungkinan terjadi karena kombinasi faktor, termasuk faktor lingkungan dan genetik. Namun, dokter meyakini bahwa paparan radiasi ultraviolet (UV) dari matahari dan lampu di kamar tidur adalah
+					  penyebab utama dari kondisi ini.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="item">
+					<h3>Benign keratosis-like lesions</h3>
+					<img src="/static/images/bkl.jpg" alt="gambar Benign-keratosis-like-lesions" style="width: 60%" />
+					<p>
+					  penyakit <i>Benign keratosis-like lesions</i> atau <i>Keratosis seboroik</i> terjadi ketika sel-sel di kulit tumbuh secara tidak normal. Penyebabnya belum diketahui secara pasti. Namun, kondisi tersebut
+					  diduga berkaitan dengan beberapa faktor berikut:Berusia di atas 40 tahun, Genetik.
+					</p>
+				  </div>
+				</div>
+
+				<div class="col-md-3">
+				  <div class="item">
+					<h3>Basal cell carcinoma</h3>
+					<img src="/static/images/bcc.jpg" alt="gambar Basal-cell-carcinoma" style="width: 60%" />
+					<p><i>Basal cell carcinoma</i> jenis penyakit kulit yang paling umum dan biasanya disebabkan oleh paparan sinar matahari yang berlebihan selama bertahun-tahun.</p>
+				  </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="item">
+					<h3>Actinic keratosis</h3>
+					<img src="/static/images/akiec.jpg" alt="gambar Actinic-keratosis" style="width: 60%" />
+					<p>
+					  <i>Actinic keratosis</i> adalah hasil dari perkembangan sel kulit yang tidak normal disebabkan oleh kerusakan DNA akibat ultraviolet B (UVB) dengan panjang gelombang pendek yang umumnya dari sinar matahari.
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="item">
+					<h3>Vascular Lesion</h3>
+					<img src="/static/images/vasc.jpg" alt="gambar Vascular-Lesion" style="width: 60%" />
+					<p>
+					  <i>Vascular Lesion</i> terjadi ketika sistem kekebalan tubuh menyerang pembuluh darah sendiri. Belum diketahui secara pasti mengapa hal tersebut terjadi. Namun, gangguan pada sistem kekebalan tubuh tersebut diduga
+					  dapat dipicu oleh beberapa kondisi, salah satunya Kanker darah, seperti limfoma
+					</p>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="item">
+					<h3>Dermatofibroma</h3>
+					<img src="/static/images/df.jpg" alt="gambar Dermatofibroma" style="width: 60%" />
+					<p>
+					  <i>Dermatofibroma</i> disebabkan oleh pertumbuhan berlebih dari campuran berbagai jenis sel pada lapisan dermis kulit. Penyebab utama munculnya dermatofibroma, tidak diketahui. Pertumbuhan kulit yang menyebabkan
+					  dermatofibroma biasanya terjadi setelah mengalami beberapa jenis trauma kecil pada kulit, seperti luka tusuk akibat serpihan kaca atau gigitan serangga.
+					</p>
+				  </div>
+				</div>
+				</div>
+			  </div>
+			<!-- <main>
+				  <p id="tittlemain">Penyakit</p>
+				  <div id="submain">Berikut adalah beberapa daftar penyakit kulit:</div>
+				  <div id="containermain"> -->
+			</div>
+			<a class="pic-icon down2 nav" href="#contact"></a>
+		</div>
+		<!-- /#panel8 --> 
+		<div id="panel7" data-nav="contact">
+			<h3 class="center-title">Contact</h3>
+			<div class="panel-inside">
+				<div id="sq1">
+					<h4>Our Contact:</h4>
+					<div class="panel7-adr">Email :<br/>
+						20083010005@student.upnjatim.ac.id<br/>
+						20083010029@student.upnjatim.ac.id<br/>
+					</div>
+				</div>
+				<div id="sq2">
+					<h4>Submit your suggestion for our web.</h4>
+					<div id="signup_form">
+						<input type="text" spellcheck="false" id="name" tabindex="1" placeholder="Your Name">
+						<input type="text" spellcheck="false" id="email" tabindex="2" placeholder="Your Email">
+						<input type="text" spellcheck="false" id="suggestions" tabindex="3" placeholder="Your Suggestions">
+						<a href="#" id="submit">Submit</a>
+					</div>
+					<div id="signup_done">
+						Thanks for your participation!.
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<a class="pic-icon home nav" href="#home"></a>
+			</div>
+		</div>
+		<!-- /#panel7 --> 
+	</div>
+	<!-- /#content --> 
+	<footer id="footer">
+		&copy; 2023, Inc. All rights reserved
+		<div class="panel-inside">
+			DermAssist: The Dermatologist in Your Pocket. This web-app is a communication tool that provides initial comparative information about skin lesions. 
+		</div>
+	</footer>
+	<!-- /#footer --> 
+</body>
+</html>
+

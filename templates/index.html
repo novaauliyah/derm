@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+
+<!-- disable iPhone scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Skin diseas detection</title>
+<meta name="description" content="Take a photo of your skin lesion on a smartphone, and this will search the world’s largest dermatology textbook and show you the most relevant information.">
+<!-- main css -->
+<link href="static/css/style.css" rel="stylesheet" type="text/css">
+<!-- media queries css -->
+<link href="static/css/media-queries.css" rel="stylesheet" type="text/css">
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- lets you use only unprefixed CSS properties  -->
+<script  src="static/prefixfree/1-0-7/prefixfree.dynamic-dom.min.js"></script>
+<!-- jQuery -->
+<script src="static/ajax/libs/jquery/1-10-2/jquery.min.js"></script>
+<script src="static/ajax/libs/jqueryui/1-8/jquery-ui.min.js"></script>
+<script src="static/js/jsapi.js"></script>
+<script  src="static/js/main.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!-- Google Analytics tracking code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48354920-1', 'lubax.com');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<div id="pagewrap" data-nav="home">
+	<header id="header">
+		<div id="header-center">
+			<a id="site-logo" href="static/index.html" title=" Home"></a>
+			<nav>
+				<ul id="main-nav">
+					<li><a href="#about" class="nav">About Us</a></li>
+					<li><a href="#how" class="nav">How it Works</a></li>
+					<li><a href="#our" class="nav">Our Team</a> </li>
+					<li><a href="#contact" class="nav">Contact</a></li>
+				</ul>
+				<!-- /#main-nav --> 
+			</nav>
+		</div>
+	</header>
+	<!-- /#header -->
+	<div id="content">
+		<div id="panel1">
+			<div id="panel1-inside">
+				<div id="panel1-right">
+					<h1>Aplikasi berbasis web untuk mengidentifikasi penyakit kulit</h1>
+					<div class="panel1-sq" id="sq3">
+						<div class="pic-icon sq-icon"></div>
+						<div class="sq-title"><a href="static/upload.html">Identify</a></div>
+					</div>
+					<div class="clearfix"></div>
+					<h2>
+						Cukup ambil atau upload foto kulit Anda dan aplikasi kami akan mencari hasil diagnosis penyakit Anda.
+					</h2>
+				</div>
+				<a class="pic-icon down1 nav" href="#about"></a>
+			</div>
+		</div>
+		<!-- /#panel1 --> 
+		<div id="panel2" data-nav="about">
+			<h3 class="center-title">About Us</h3>
+			<div class="panel-inside">
+				<div class="panel2-sq" id="sq1">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi web ini membantu Anda untuk mengetahui penyakit kulit dengan cepat. 
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq2">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi web ini bekerja dengan cara Anda upload sebuah gambar yang mirip dengan masalah kulit Anda.
+Aplikasi web ini dirancang untuk Anda mengetahui penyebab dan cara pengobatan penyakit kulit.
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq3">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Harapannya aplikasi ini mampu membantu masyarakat untuk dapat membedakan penyakit kulit yang sedang dialami, dan informasi tersebut dapat berguna bagi pihak yang membutuhkannya.
+					</div>
+				</div>
+				<div class="panel2-sq" id="sq4" style="margin-right: 0">
+					<div class="pic-icon sq-icon"></div>
+					<div class="sq-text">
+						Aplikasi ini dibuat guna memenuhi syarat kelulusan program SIB x Orbit Future Academy Batch 4.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<a id="panel2-down" class="pic-icon down2 nav" href="#how"></a>
+		</div>
+		<!-- /#panel2 --> 
+		<div id="panel3" data-nav="how">
+			<h3 class="center-title">How it Works</h3>
+			<div class="panel-inside">
+				<div id="panel3-sq1">
+					<h3>DermAssist: The Dermatologist in Your Pocket</h3>
+					<div id="sq3-text">
+						Bekerja seperti pencarian gambar Google, kami dirancang khusus untuk gambar penyakit kulit. Sementara pencarian gambar Google menyurvei seluruh internet, sedangkan kami menggunakan gambar penyakit kulit yang telah dipilih dengan cermat.
+					</div>
+				</div>
+				<img id="panel3-sq2" src="static/images/algorithm.png" class="panel-img" alt="Lubax Alorithm"/>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down1 nav" href="#database"></a>
+		</div>
+		<!-- /#panel3 --> 
+		<div id="panel4" data-nav="database">
+			<h3 class="center-title">DermAssist: The Dermatologist in Your Pocket</h3>
+			<div class="panel-inside">
+				<img id="panel4-sq1" src="static/images/database.png" class="panel-img"  alt="Lubax Database"/>
+				<div id="panel4-sq2">
+					<p> - Lebih fleksibel
+					<p> - Dapat digunakan setiap saat
+					<p> - Gratis</p>
+					<p>   </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down2 nav" href="#platform"></a>
+		</div>
+		<!-- /#panel4 
+		<div id="panel5" data-nav="platform">
+			<h3 class="center-title">The Platform</h3>
+			<div class="panel-inside">
+				<div id="panel5-sq1">
+					<div id="sq5-text">
+						A smartphone or tablet is the ideal platform for Lūbax.  The clinician does not need to obtain expensive hardware solutions or worry about expensive per-use charges per patient.  Lūbax is a simple, inexpensive system to identify skin lesions using a smartphone and tablet based platforms.
+					</div>
+				</div>
+				<img id="panel5-sq2" src="images/platforms.png" class="panel-img" alt="Lubax Platform"/>
+				<div class="clearfix"></div>
+			</div>
+			<a class="pic-icon down1 nav" href="#team"></a>
+		</div>
+		 /#panel5 --> 
+		<!-- /#panel6 --> 
+		<div id="panel8" data-nav="our">
+			<h3 class="center-title">Our Team</h3>
+			<div class="panel-inside">
+				<div class="row">
+					<!-- <div class="row"> -->
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="person-title">
+							<h5>Dyah Ayu Puspita Maharani</h5>
+
+						</div>
+						<img src="images/dyah.jpg">
+						<img src="{{ url_for('static',filename='images/dyah.jpg') }}"
+							alt="gambar Dyah-Ayu-Puspita-Maharani">
+						<div class="containerlink">
+							<p>Universitas Pembangunan Nasional Veteran Jawa Timur</p>
+						</div>
+					</div>
+
+					<!-- <div class="row"> -->
+					<div class="col-xl-3 col-lg-3 col-md-6">
+
+						<div class="person-title">
+							<h5> Auliyatul Maulidiyyah</h5>
+
+						</div>
+						<img src="images/nova.jpeg">
+						<img src="{{ url_for('static',filename='images/nova.jpeg') }}"
+							alt="gambar Nofa-Auliyatul-Maulidiyyah">
+						<div class="containerlink">
+							<a href="https://www.linkedin.com/in/nofaauliyah/" target="_blank">Linkedin <i
+									class="fa fa-linkedin-square"></i></a>
+							<a href="https://instagram.com/nvaaulyah" target="_blank">Instagram <i
+									class="fa fa-instagram"></i></a>
+							<p>Universitas Pembangunan Nasional Veteran Jawa Timur</p>
+						</div>
+					</div>
+
+					<!-- <div class="row"> -->
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="person-title">
+							<h5>Putri Wanda Yasmine Faradila</h5>
+
+						</div>
+						<img src="images/yasmine.jpg">
+
+						<img src="{{ url_for('static',filename='images/yasmine.jpg') }}"
+							alt="gambar Putri-Wanda-Yasmine-Faradila">
+						<div class="containerlink">
+							<a href="https://www.linkedin.com/in/putriyasmine26/" target="_blank">Linkedin <i
+									class="fa fa-linkedin-square"></i></a>
+							<a href="https://instagram.com/putriwyasmineef" target="_blank">Instagram <i
+									class="fa fa-instagram"></i></a>
+							<p>Universitas Pembangunan Nasional Veteran Jawa Timur</p>
+						</div>
+					</div>
+
+					<!-- <div class="row"> -->
+					<div class="col-xl-3 col-lg-3 col-md-6">
+						<div class="person-title">
+							<h5>Farel Brahmantya Rivera</h5>
+
+						</div>
+						<img src="images/Farel.jpeg">
+
+						<img src="{{ url_for('static',filename='images/Farel.jpeg') }}"
+							alt="gambar Farel-Brahmantya-Rivera">
+						<div class="containerlink">
+							<p>Universitas Pembangunan Nasional Veteran Jawa Timur</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<a class="pic-icon down2 nav" href="#contact"></a>
+		</div>
+		<!-- /#panel8 --> 
+		<div id="panel7" data-nav="contact">
+			<h3 class="center-title">Contact</h3>
+			<div class="panel-inside">
+				<div id="sq1">
+					<h4>Our Contact:</h4>
+					<div class="panel7-adr">Email :<br/>
+						20083010005@student.upnjatim.ac.id<br/>
+						20083010029@student.upnjatim.ac.id<br/>
+					</div>
+				</div>
+				<div id="sq2">
+					<h4>Submit your suggestion for our web.</h4>
+					<div id="signup_form">
+						<input type="text" spellcheck="false" id="name" tabindex="1" placeholder="Your Name">
+						<input type="text" spellcheck="false" id="email" tabindex="2" placeholder="Your Email">
+						<input type="text" spellcheck="false" id="suggestions" tabindex="3" placeholder="Your Suggestions">
+						<a href="#" id="submit">Submit</a>
+					</div>
+					<div id="signup_done">
+						Thanks for your participation!.
+					</div>>
+				</div>
+				<div class="clearfix"></div>
+				<a class="pic-icon home nav" href="#home"></a>
+			</div>
+		</div>
+		<!-- /#panel7 --> 
+	</div>
+	<!-- /#content --> 
+	<footer id="footer">
+		&copy; 2023, Inc. All rights reserved
+		<div class="panel-inside">
+			DermAssist: The Dermatologist in Your Pocket. This web-app is a communication tool that provides initial comparative information about skin lesions. 
+		</div>
+	</footer>
+	<!-- /#footer --> 
+</div>
+<!-- /#pagewrap -->
+</body>
+</html>
